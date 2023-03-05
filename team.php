@@ -26,8 +26,8 @@ include('header.php');
         </div>
         <div class="agent-text">
           <h3><?php echo ucfirst($row['name'])?></h3>
-          <p><?php echo  ucfirst($row['designation'])?></p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam</p>
+          <p><?php echo substr(ucfirst($row['designation']),0,250) ?></p>
+
           <a href="team_detail.php?id=<?php echo $row['id']?>   " class="link_arrow">Read More</a>
         </div>
       </div>
