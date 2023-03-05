@@ -5,11 +5,11 @@
     <div class="row border-bottom">
       <div class="col-sm-6 col-md-3">
         <div class="widget dark">
-          <img class="mt-5 mb-20" alt="" src="images/logo.png">
+          <img class="mt-5 mb-20" alt="" src="images/transparent.png">
           <p>Topline Property Solutions.</p>
           <ul class="list-inline mt-5">
             <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">03345131288</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">hafeezullah7@gmail.com</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="mailto:hafeezullah7@gmail.com">hafeezullah7@gmail.com</a> </li>
           </ul>
         </div>
       </div>

@@ -64,7 +64,7 @@ require('connection.inc.php');
                 <h4>Email Address</h4>
               </li>
               <li>
-                <p><a href="#">hafeezullah7@gmail.com</a></p>
+                <p><a href="mailto:hafeezullah7@gmail.com">hafeezullah7@gmail.com</a></p>
               </li>
             </ul>
           </div>
