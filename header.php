@@ -91,7 +91,7 @@ require('connection.inc.php');
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i></button>
-            <a class="navbar-brand sticky_logo" href="/"><img src="images/transparent.png" class="logo" alt=""></a>
+            <a class="navbar-brand sticky_logo" href="index.php"><img src="images/transparent.png" class="logo" alt=""></a>
           </div>
           <!-- End Header Navigation --> 
           <!-- Collect the nav links, forms, and other content for toggling -->

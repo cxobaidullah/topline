@@ -226,54 +226,27 @@ while($list=mysqli_fetch_assoc($res)) {?>
         <div class="row">
           <div class="col-md-12">
             <h3 class="text-uppercase  bottom40 top40">Recent <span class="color_red">Properties</span></h3>
+            <?php
+              $recent="SELECT * FROM properties ORDER BY property_id DESC limit 4";
+              $getRecent=mysqli_query($con,$recent);
+              while($recents=mysqli_fetch_assoc($getRecent)){
+            ?>
+
             <div class="media">
               <div class="media-left media-middle">
-                <a href="#.">
+                <a href="property_details.php?id=<?php echo $recents['property_id'] ?>">
                 <img class="media-object" src="images/f-p-1.png" alt="image">
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading"><a href="#.">Historic Town House</a></h4>
-                <p>45 Regent Street, London, UK</p>
-                <a href="#.">$178,600</a>
+                <h4 class="media-heading"><a href="#."><?php $recents['property_title']?></a></h4>
+                <p><?php echo ucfirst($recents['property_address'])," ".$recents['city']?></p>
+                <a href="property_details.php?id=<?php echo $recents['property_id'] ?>">RS. <?php echo $recents['price']?></a>
               </div>
             </div>
-            <div class="media">
-              <div class="media-left media-middle">
-                <a href="#.">
-                <img class="media-object" src="images/f-p-2.png" alt="image">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading"><a href="#.">Historic Town House</a></h4>
-                <p>45 Regent Street, London, UK</p>
-                <a href="#.">$178,600</a>
-              </div>
-            </div>
-            <div class="media">
-              <div class="media-left media-middle">
-                <a href="#.">
-                <img class="media-object" src="images/f-p-3.png" alt="image">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading"><a href="#.">Historic Town House</a></h4>
-                <p>45 Regent Street, London, UK</p>
-                <a href="#.">$178,600</a>
-              </div>
-            </div>
-            <div class="media">
-              <div class="media-left media-middle">
-                <a href="#.">
-                <img class="media-object" src="images/f-p-1.png" alt="image">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading"><a href="#.">Historic Town House</a></h4>
-                <p>45 Regent Street, London, UK</p>
-                <a href="#.">$178,600</a>
-              </div>
-            </div>
+            <?php
+            }
+            ?>
           </div>
         </div>
         <div class="row">
@@ -282,33 +255,20 @@ while($list=mysqli_fetch_assoc($res)) {?>
           </div>
           <div class="col-md-12">
             <div id="agent-2-slider" class="owl-carousel">
+            <?php
+              $feature="SELECT property_img,property_id FROM properties where property_status='Rent' ORDER BY property_id DESC limit 3";
+              $getfeature=mysqli_query($con,$feature);
+              while($fetures=mysqli_fetch_assoc($getfeature)){
+            ?>
               <div class="item">
                 <div class="property_item heading_space">
                   <div class="image">
-                    <a href="#."><img src="images/property-listing-6.jpg" alt="listin" class="img-responsive"></a>
+                    <a href="property_details.php?id=<?php echo $fetures['property_id'] ?>"><img src="admin/media/product/<?php echo $fetures['property_img'] ?>" alt="listin" class="img-responsive"></a>
                     <div class="feature"><span class="tag-2">For Rent</span></div>
-                    
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="property_item heading_space">
-                  <div class="image">
-                    <a href="#."><img src="images/property-listing-6.jpg" alt="listin" class="img-responsive"></a>
-                    <div class="feature"><span class="tag-2">For Rent</span></div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="property_item heading_space">
-                  <div class="image">
-                    <a href="#."><img src="images/property-listing-6.jpg" alt="listin" class="img-responsive"></a>
-                    <div class="feature"><span class="tag-2">For Rent</span></div>
-                    
-                  </div>
-                </div>
-              </div>
+              <?php } ?>
             </div>
           </div>
         </div>
