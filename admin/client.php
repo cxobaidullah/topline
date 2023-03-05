@@ -147,7 +147,14 @@ $count=mysqli_num_rows($res);
                                     </td>
                                     <td><?php echo $row['name'] ?></td>
                                     <td><?php echo $row['email'] ?></td>
-                                    <td><?php echo $row['designation'] ?></td>
+                                    <td>
+                                       <?php 
+                                          echo substr(ucfirst($row['designation']),0,40);
+                                          if(strlen($row['designation'])>40){
+                                             echo '...';
+                                          }
+                                       ?>
+                                    </td>
                                     <td><?php echo $row['mobile'] ?></td>
                                     <td><img src="media/client/<?php echo $row['image'] ?>" alt=""></td>
                                     <td>
