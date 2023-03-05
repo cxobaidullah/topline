@@ -8,7 +8,7 @@ require('connection.inc.php');
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title> HOMES </title>
+<title> HOME</title>
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/color/color-1.css" id="color" />
 <link rel="shortcut icon" href="images/short_icon.png">
@@ -16,10 +16,6 @@ require('connection.inc.php');
 
 </head>
 <body>
-
-
-
-
 <!--===== BACK TO TOP =====-->
 <div class="short-msg">
   <a href="#." class="back-to"><i class="icon-arrow-up2"></i></a>
@@ -95,14 +91,14 @@ require('connection.inc.php');
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
             <i class="fa fa-bars"></i></button>
-            <a class="navbar-brand sticky_logo" href="index-2.html"><img src="images/transparent.png" class="logo" alt=""></a>
+            <a class="navbar-brand sticky_logo" href="/"><img src="images/transparent.png" class="logo" alt=""></a>
           </div>
           <!-- End Header Navigation --> 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
               <li class="<?php echo $home_active?>">
-                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">Homes</a>
+                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">Home</a>
               </li>
               
               <li class="dropdown <?php echo $property_active?>">
