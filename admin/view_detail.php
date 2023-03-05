@@ -83,7 +83,10 @@ $res=mysqli_query($con,$sql);
                                           }
                                        ?></td>
                                       
-                                       <td><?php echo $row['delivery_type']?></td>
+                                       <td><?php if(isset($row['delivery_type'])){
+                                          echo $row['delivery_type'];
+                                       }   
+                                       ?></td>
                               
                                        <td><?php echo $row['price']?></td>
                                        <td><?php echo $row['property_address']?></td>
@@ -92,9 +95,14 @@ $res=mysqli_query($con,$sql);
                                        <td><?php echo $row['img3']?></td>
                                        <td><?php echo $row['img4']?></td>
                                        <td><?php echo $row['bed_room']?></td>
-                                       <td><?php echo $row['liv_room']?></td>
+                                       <td>
+                                       <?php if(isset($row['liv_room'])){
+                                          echo $row['liv_room'];
+                                       }   
+                                       ?>
+                                       </td>
                                        <td><?php echo $row['parking']?></td>
-                                       <td><?php echo $row['kitchen']?></td>
+                                       <td><?php echo $row['kitchen'] ?? ''?></td>
                                        <td><?php echo $row['utility']?></td>
                                        <td><?php echo $row['property_type']?></td>
                                        <td><?php echo $row['floor_space']?></td>
