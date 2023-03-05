@@ -53,27 +53,27 @@ $row=mysqli_fetch_assoc($res);
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="agent-p-form">
           <div class="row">
-            <form class="findus">
+            <form class="findus" id="contactus" method="POST">
               <div class="col-md-12">
                 <div class="single-query">
-                  <input type="text" placeholder="Your Name" class="keyword-input">
+                  <input type="text" placeholder="Your Name" class="keyword-input" name="name" id="name" required>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="single-query">
-                  <input type="text" placeholder="Phone Number" class="keyword-input">
+                  <input type="text" placeholder="Phone Number" class="keyword-input" name="phone" id="phone" required>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="single-query">
-                  <input type="text" placeholder="Email Adress" class="keyword-input">
+                  <input type="email" placeholder="Email Adress" class="keyword-input" name="email" id="email" required>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="single-query">
-                  <textarea placeholder="Massege"></textarea>
+                  <textarea placeholder="Massege" name="message" id="message" required></textarea>
                 </div>
-                <a href="#." class="btn_fill">Submit Now</a>
+                <button type="submit" class="btn_fill" id="btn_submit" name="btn_submit">Submit</button>
               </div>
             </form>
             
@@ -84,7 +84,35 @@ $row=mysqli_fetch_assoc($res);
   </div>
 </section>
 <!-- Agent-Profile End -->
-
+<!--===== #/CONTACT US =====-->
+<script>
+  $(document).ready(function() {
+    $('#contactus').submit(function(e) {
+      var name = $('#name').val();
+      var phone = $('#phone').val();
+      var email = $('#email').val();
+      var message = $('#message').val();
+      e.preventDefault();
+      $.ajax({
+        url: "contactSubmit.php",
+        type: "post",
+        data: {
+          'name': name,
+          'phone': phone,
+          'email': email,
+          'message': message
+        },
+        success: function(response) {
+          $("#contactus").trigger('reset');
+          $('#success').append('<span style="color:green">' + response + '</span>')
+        },
+        error: function(response) {
+          console.log(response);
+        }
+      });
+    })
+  })
+</script>
 
 <?php 
 include('footer.php');

@@ -60,10 +60,10 @@ include('header.php');
         <div class="agent-p-contact p-t-30">
           <div class="agetn-contact-2">
             <p><i class="icon-telephone114"></i> (+92) 3345131288</p>
-            <a href="#.">
+            <a href="mailto:hafeezullah7@gmail.com">
               <p><i class=" icon-icons142"></i>hafeezullah7@gmail.com</p>
             </a>
-            <a href="#.">
+            <a href="https://www.toplinepropertysolution.com/" target="_blank">
               <p><i class="icon-browser2"></i>www.toplinepropertysolution.com</p>
             </a>
             <p><i class="icon-icons74"></i> Ghori Town Phase 5 Koral Town, Islamabad,
