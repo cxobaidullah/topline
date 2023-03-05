@@ -14,13 +14,15 @@ include('header.php');
           <div class="line_2"></div>
           <div class="line_3"></div>
           <p class="top20 bottom40 text-justify">Topline Property Solutions is a leading real estate company based in Islamabad. Our company specializes in providing high-quality real estate services to our clients, including property management, investment advisory, and development services. We have been serving our clients for several years and have built a reputation for our professionalism, integrity, and commitment to excellence.
+          </p>
           <br>
+<p>
           Currently, we are working on several ongoing projects, including Nexus Islamabad and Landmark Heights at the main Islamabad expressway. Our team of experts is dedicated to delivering projects that exceed our clients' expectations and offer the highest quality of living standards.
-          <br>
+          </p>
           In addition, we have also marketed J7 Group's prestigious projects, J7 ICOM Signature, and J7 Emporium Islamabad. These projects are recognized for their exceptional design, state-of-the-art facilities, and prime location, making them some of the most desirable real estate investments in the region.
-          <br>
+                    <br>
           At Topline Property Solutions, we understand that the real estate market can be challenging, and our team of professionals is committed to providing our clients with the best possible service. We take pride in our ability to offer customized real estate solutions that cater to the unique needs of each client.
-          <br>
+          <p>
           We invite you to explore our ongoing and completed projects and experience our exceptional service for yourself. Whether you are looking to buy, sell, or invest in real estate, Topline Property Solutions is your one-stop solution for all your real estate needs
           </p>
           <a class="link_arrow dark_border top40" href="#">Read More</a>
