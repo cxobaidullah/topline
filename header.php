@@ -40,7 +40,7 @@ require('connection.inc.php');
                 <h4>Phone Number</h4>
               </li>
               <li>
-                <p>+92 0000000008</p>
+                <p>+92 3345131288</p>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ require('connection.inc.php');
                 <h4>Location,</h4>
               </li>
               <li>
-                <p>Real State Rawalpindi</p>
+                <p>Ghori Town Phase 5 Koral Town, Islamabad,</p>
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@ require('connection.inc.php');
                 <h4>Email Address</h4>
               </li>
               <li>
-                <p><a href="#">info@gmail.com</a></p>
+                <p><a href="#">hafeezullah7@gmail.com</a></p>
               </li>
             </ul>
           </div>

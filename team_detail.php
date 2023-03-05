@@ -27,7 +27,7 @@ $row=mysqli_fetch_assoc($res);
         <div class="agent-p-contact">
           <div class="our-agent-box padding-b-30">
             <h3><?php echo $row['name']?></h3>
-            <p class="p-font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer adipiscing eleifend option congue nihil imperdiet doming…</p>
+            <p class="p-font-15"><?php echo $row['description']?></p>
           </div>
           <div class="agetn-contact">
             <h6>Mobile:</h6>
