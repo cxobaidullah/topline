@@ -76,7 +76,7 @@ $res=mysqli_query($con,$sql);
                                        </td>
                                        <td><?php echo $row['property_id']?></td>
                                        <td><?php if(isset($row['property_title'])){
-                                           echo $row['property_title']
+                                           echo $row['property_title'];
                                        }?></td>
                                        <td> <?php 
                                           echo substr(ucfirst($row['property_details']),0,40);
@@ -90,31 +90,31 @@ $res=mysqli_query($con,$sql);
                                        }   
                                        ?></td>
                               
-                                       <td><?php if(isset($row['price'])){echo $row['price']}?></td>
+                                       <td><?php if(isset($row['price'])){echo $row['price'];}?></td>
                                        <td>
-                                          <?php if(isset($row['property_address'])){echo $row['property_address']}?>
+                                          <?php if(isset($row['property_address'])){echo $row['property_address'];}?>
                                        </td>
-                                       <td><?php if(isset($row['property_img'])) {echo $row['property_img']}?></td>
-                                       <td><?php if(isset($row['img2'])) { echo $row['img2']}?></td>
-                                       <td><?php if(isset($row['img3'])){echo $row['img3']}?></td>
-                                       <td><?php  if(isset($row['img4'])){ echo $row['img4']}?></td>
-                                       <td><?php if(isset($row['bed_room'])) {echo $row['bed_room']}?></td>
+                                       <td><?php if(isset($row['property_img'])) {echo $row['property_img'];}?></td>
+                                       <td><?php if(isset($row['img2'])) { echo $row['img2'];}?></td>
+                                       <td><?php if(isset($row['img3'])){echo $row['img3'];}?></td>
+                                       <td><?php  if(isset($row['img4'])){ echo $row['img4'];}?></td>
+                                       <td><?php if(isset($row['bed_room'])) {echo $row['bed_room'];}?></td>
                                        <td>
                                        <?php if(isset($row['liv_room'])){
                                           echo $row['liv_room'];
                                        }   
                                        ?>
                                        </td>
-                                       <td><?php if(isset($row['parking'])) { echo $row['parking']}?></td>
-                                       <td><?php if(isset($row['kitchen'])) {echo $row['kitchen']} ?? ''?></td>
-                                       <td><?php if(isset($row['utility'])) {echo $row['utility']}?></td>
-                                       <td><?php if(isset($row['property_type'])){ echo $row['property_type']}?></td>
-                                       <td><?php if(isset($row['floor_space'])) {echo $row['floor_space']}?></td>
-                                       <td><?php if(isset($row['agent_id'])) {echo $row['agent_id']}?></td>
+                                       <td><?php if(isset($row['parking'])) { echo $row['parking'];}?></td>
+                                       <td><?php if(isset($row['kitchen'])) {echo $row['kitchen'];}?></td>
+                                       <td><?php if(isset($row['utility'])) {echo $row['utility'];}?></td>
+                                       <td><?php if(isset($row['property_type'])){ echo $row['property_type'];}?></td>
+                                       <td><?php if(isset($row['floor_space'])) {echo $row['floor_space'];}?></td>
+                                       <td><?php if(isset($row['agent_id'])) {echo $row['agent_id'];}?></td>
                                        <td>
                                           <!-- <?php echo $row['status']?> -->
                                            <?php 
-                                           if($row['availablility']==1){
+                                           if(isset($row['availablility']) && $row['availablility']==1){
                                            echo "<span class='badge badge-complete'><a href='?type=availablility&operation=deactive&id=".$row['property_id']."'>Active</a></span>&nbsp";
                                             }
                                            else{

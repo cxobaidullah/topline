@@ -27,17 +27,6 @@ if (isset($_POST['submit'])) {
    $Email = get_safe_value($con, $_POST['Email']);
    $res = mysqli_query($con, "select * from agent where agent_name='$Agent' ");
    $check = mysqli_num_rows($res);
-   if ($check > 0) {
-      if (isset($_GET['agent_id']) && $_GET['agent_id'] != '') {
-         $getData = mysqli_fetch_assoc($res);
-         if ($id == $getData['agent_id']) {
-         } else {
-            $msg = "Agent already exist";
-         }
-      } else {
-         $msg = "Agent already exist";
-      }
-   }
    if (isset($_FILES['image'])) {
       $image = $_FILES["image"]["name"];
       $tempname = $_FILES["image"]["tmp_name"];
@@ -57,15 +46,27 @@ if (isset($_POST['submit'])) {
       agent_email='$Email' where agent_id='$id'");
         }
       } else {
+         if ($check > 0) {
+            if (isset($_GET['agent_id']) && $_GET['agent_id'] != '') {
+               $getData = mysqli_fetch_assoc($res);
+               if ($id == $getData['agent_id']) {
+               } else {
+                  $msg = "Agent already exist";
+               }
+            } else {
+               $msg = "Agent already exist";
+            }
+         }
 
          mysqli_query($con, "insert into agent(agent_name,agent_address,
     agent_contact,agent_email,image) values('$Agent','$Address',
     '$Contact','$Email','$image')");
       }
       header('location:agent.php');
-      die();
    }
 }
+
+
 
 
 
