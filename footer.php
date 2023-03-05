@@ -8,8 +8,8 @@
           <img class="mt-5 mb-20" alt="" src="images/logo.png">
           <p>Topline Property Solutions.</p>
           <ul class="list-inline mt-5">
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">123-456-789</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">contact@topline.com</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">03345131288</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#.">hafeezullah7@gmail.com</a> </li>
           </ul>
         </div>
       </div>
@@ -70,8 +70,8 @@
       <div class="col-md-3 col-sm-4">
         <div class="widget dark">
           <h5 class="widget-title mb-10">Call Us Now</h5>
-          <div class="text-gray"> 123 456789 <br>
-          123 456789 
+          <div class="text-gray"> 03345131288 <br>
+          03345131288
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
         <div class="widget dark">
           <h5 class="widget-title mb-10">Connect With Us</h5>
           <ul class="socials">
-            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/ToplinePropertySolution/" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#."><i class="fa fa-twitter"></i></a></li>
             <li><a href="#."><i class="fa fa-youtube"></i></a></li>
             <li><a href="#."><i class="fa fa-instagram"></i></a></li>

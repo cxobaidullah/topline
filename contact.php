@@ -59,17 +59,19 @@ include('header.php');
 
         <div class="agent-p-contact p-t-30">
           <div class="agetn-contact-2">
-            <p><i class="icon-telephone114"></i> (+01) 34 56 7890</p>
+            <p><i class="icon-telephone114"></i> (+92) 3345131288</p>
             <a href="#.">
-              <p><i class=" icon-icons142"></i> info@ideahomes.com</p>
+              <p><i class=" icon-icons142"></i>hafeezullah7@gmail.com</p>
             </a>
             <a href="#.">
-              <p><i class="icon-browser2"></i>www.ideahomes.com</p>
+              <p><i class="icon-browser2"></i>www.toplinepropertysolution.com</p>
             </a>
-            <p><i class="icon-icons74"></i> Idea Homes, Merrick Way, FL 12345 Australia</p>
+            <p><i class="icon-icons74"></i> Ghori Town Phase 5 Koral Town, Islamabad,
+
+</p>
           </div>
           <ul class="socials">
-            <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/ToplinePropertySolution/" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#."><i class="fa fa-twitter"></i></a></li>
             <li><a href="#."><i class="fa fa-youtube"></i></a></li>
             <li><a href="#."><i class="fa fa-instagram"></i></a></li>
