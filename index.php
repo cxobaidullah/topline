@@ -467,7 +467,7 @@ include('header.php');
         </div>
         <div class="team_text text-center">
           <h3><?php echo ucfirst($row['name'])?></h3>
-          <span><?phpecho substr(ucfirst($row['designation']),0,80)?></span>
+          <span><?php echo substr(ucfirst($row['designation']),0,80)?></span>
          
           <a href="team_detail.php?id=<?php echo $row['id']?>" class="link_arrow">Read More</a>
         </div>
