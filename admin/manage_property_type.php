@@ -3,19 +3,17 @@ require('top.inc.php');
 $property_type = '';
 $property_type_id='';
 if (isset($_POST['submit'])) {
-
 	if($_POST['property_type_id']==''){
 		$property_type = get_safe_value($con, $_POST['property_type']);
-		$select = "SELECT property_type from property_type";
+		$select = "SELECT  property_type from property_type LIMIT 1";
 		$run = mysqli_query($con, $select);
 		while ($output = mysqli_fetch_assoc($run)) {
 			if ($output['property_type'] == $property_type) { ?>
 				<script>
 					alert('Property Type <?php echo $property_type ?> Already Exist');
 				</script>
-	<?php
+			<?php
 			} else {
-	
 				$sql = "INSERT INTO `property_type`(`property_type`, `status`) VALUES ('$property_type','1')";
 				$res = mysqli_query($con, $sql);
 				if ($res) {
