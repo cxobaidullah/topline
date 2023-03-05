@@ -76,7 +76,13 @@ $res=mysqli_query($con,$sql);
                                        </td>
                                        <td><?php echo $row['property_id']?></td>
                                        <td><?php echo $row['property_title']?></td>
-                                       <td><?php echo $row['property_details']?></td>
+                                       <td> <?php 
+                                          echo substr(ucfirst($row['property_details']),0,40);
+                                          if(strlen($row['property_details'])>40){
+                                             echo '...';
+                                          }
+                                       ?></td>
+                                      
                                        <td><?php echo $row['delivery_type']?></td>
                               
                                        <td><?php echo $row['price']?></td>

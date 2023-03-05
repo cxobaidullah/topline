@@ -46,8 +46,16 @@ if (isset($_POST['submit'])) {
   }
    if ($msg == '') {
       if (isset($_GET['id']) && $_GET['id'] != '') {
+         if (isset($_FILES['image'])) {
+            $image = $_FILES["image"]["name"];
+            $tempname = $_FILES["image"]["tmp_name"];
+            $folder = "media/agent/" . $image;
+            move_uploaded_file($tempname, $folder);
+            mysqli_query($con, "update agent set agent_name='$Agent',agent_address='$Address',agent_contact='$Contact',agent_email='$Email',image='$image' where agent_id='$id'");
+        }else{
          mysqli_query($con, "update agent set agent_name='$Agent',agent_address='$Address',agent_contact='$Contact',
       agent_email='$Email' where agent_id='$id'");
+        }
       } else {
 
          mysqli_query($con, "insert into agent(agent_name,agent_address,
@@ -90,10 +98,11 @@ if (isset($_POST['submit'])) {
                      <div class="form-group">
                         <label for="Email" class=" form-control-label">Image</label>
                         <input type="file" name="image" class="form-control" required>
-                        <?php if($row['image']!=''){?>
+                        <?php if(isset($row['image'])){?>
                         <img src="media/agent/<?php echo $row['image']?>" height="100px" width="100px" alt="">
                      <?php }else{
-                     echo "No Image";}
+                     // echo "No Image";
+                  }
                         ?>
                      </div>
                      <button id="payment-button" name="submit" type="submit" class="btn btn-lg btn-info btn-block">

@@ -338,7 +338,7 @@ include('header.php');
                     <p><span>Location:</span> Mountain Line CA 62548</p>
                     <p><span>Value:</span> $15,000</p>
                   </div>
-                  <a href="property_details_1.html" class="link_arrow">read more</a> 
+                  <a href="#" class="link_arrow">read more</a> 
                 </div>
               </div>
             </div>
@@ -366,7 +366,7 @@ include('header.php');
                     <p><span>Location:</span> Mountain Line CA 62548</p>
                     <p><span>Value:</span> $15,000</p>
                   </div>
-                  <a href="property_details_1.html" class="link_arrow">read more</a> 
+                  <a href="#" class="link_arrow">read more</a> 
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ include('header.php');
                     <p><span>Location:</span> Mountain Line CA 62548</p>
                     <p><span>Value:</span> $15,000</p>
                   </div>
-                  <a href="property_details_1.html" class="link_arrow">read more</a> 
+                  <a href="#" class="link_arrow">read more</a> 
                 </div>
               </div>
             </div>
@@ -422,7 +422,7 @@ include('header.php');
                     <p><span>Location:</span> Mountain Line CA 62548</p>
                     <p><span>Value:</span> $15,000</p>
                   </div>
-                  <a href="property_details_1.html" class="link_arrow">read more</a> 
+                  <a href="#" class="link_arrow">read more</a> 
                 </div>
               </div>
             </div>
@@ -467,8 +467,8 @@ include('header.php');
         </div>
         <div class="team_text text-center">
           <h3><?php echo ucfirst($row['name'])?></h3>
-          <span><?php echo  ucfirst($row['designation'])?></span>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+          <span><?phpecho substr(ucfirst($row['designation']),0,80)?></span>
+         
           <a href="team_detail.php?id=<?php echo $row['id']?>" class="link_arrow">Read More</a>
         </div>
       </div>
