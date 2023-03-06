@@ -19,8 +19,8 @@ include('header.php');
         <div class="feature_box equal-height">
           <span class="icon"> <i class="icon-select-an-objecto-tool"></i></span>
           <div class="description">
-            <h4>Wide Range of Properties</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <h4>Property Listings</h4>
+            <p> Discover your dream home with our extensive property listings, complete with stunning photos and virtual tours. </p>
           </div>
         </div>
       </div>
@@ -28,28 +28,30 @@ include('header.php');
         <div class="feature_box equal-height">
           <span class="icon"><i class="icon-user-tie"></i></span>
           <div class="description">
-            <h4>14 Agents for Your Service</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <h4>Real Estate Advice</h4>
+            <p>Get expert advice from our team of experienced real estate professionals to help you make informed decisions. </p>
           </div>
         </div>
       </div>
+
       <div class="col-md-4 col-sm-4 top40">
         <div class="feature_box equal-height">
           <span class="icon"><i class="fa fa-money"></i></span>
           <div class="description">
-            <h4>Best Price Guarantee!</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <h4>Home Loans</h4>
+            <p>Get the financing you need for your dream home with our flexible and affordable home loan options. </p>
           </div>
         </div>
       </div>
+
     </div>
     <div class="row">
       <div class="col-md-4 col-sm-4 top40">
         <div class="feature_box equal-height">
           <span class="icon"> <i class="icon-select-an-objecto-tool"></i></span>
           <div class="description">
-            <h4>Wide Range of Properties</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <h4>Property Valuation</h4>
+            <p>Determine the true value of your property with our accurate property valuation services. </p>
           </div>
         </div>
       </div>
@@ -57,8 +59,8 @@ include('header.php');
         <div class="feature_box equal-height">
           <span class="icon"><i class="icon-user-tie"></i></span>
           <div class="description">
-            <h4>14 Agents for Your Service</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <h4>Property Search Assistance</h4>
+            <p>Find your perfect property with our expert guidance tailored to your unique needs and lifestyle. </p>
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@ include('header.php');
           <span class="icon"><i class="fa fa-money"></i></span>
           <div class="description">
             <h4>Best Price Guarantee!</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
+            <p>We promise to offer the most competitive price in the market for your real estate needs.</p>
           </div>
         </div>
       </div>

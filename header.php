@@ -8,7 +8,7 @@ require('connection.inc.php');
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title> HOME</title>
+<title>Topline Property Solutions</title>
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/color/color-1.css" id="color" />
 <link rel="shortcut icon" href="images/short_icon.png">

@@ -71,9 +71,9 @@ include('header.php');
         <div class="feature_box equal-height">
           <span class="icon"> <i class="icon-select-an-objecto-tool"></i></span>
           <div class="description">
-            <h4>Wide Range of Properties</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
-            <a href="" class="link_arrow top20">Read More</a> 
+            <h4>Real Estate Advice</h4>
+            <p>Get expert advice from our team of experienced real estate professionals to help you make informed decisions.</p>
+            <!-- <a href="" class="link_arrow top20">Read More</a>  -->
           </div>
         </div>
       </div>
@@ -81,9 +81,9 @@ include('header.php');
         <div class="feature_box equal-height">
           <span class="icon"><i class="icon-user-tie"></i></span>
           <div class="description">
-            <h4>14 Agents for Your Service</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
-            <a href="" class="link_arrow top20">Read More</a> 
+            <h4>Property Search Assistance</h4>
+            <p>Find your perfect property with our expert guidance tailored to your unique needs and lifestyle. </p>
+            <!-- <a href="" class="link_arrow top20">Read More</a>  -->
           </div>
         </div>
       </div>
@@ -92,8 +92,8 @@ include('header.php');
           <span class="icon"><i class="fa fa-money"></i></span>
           <div class="description">
             <h4>Best Price Guarantee!</h4>
-            <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
-            <a href="" class="link_arrow top20">Read More</a> 
+            <p>We promise to offer the most competitive price in the market for your real estate needs. </p>
+            <!-- <a href="" class="link_arrow top20">Read More</a>  -->
           </div>
         </div>
       </div>
