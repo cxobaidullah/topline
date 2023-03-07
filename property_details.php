@@ -193,8 +193,9 @@ while($list=mysqli_fetch_assoc($res)) {?>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="agent-p-contact">
                         <div class="our-agent-box">
-                          <h3 class="bottom10"><?php echo ucfirst($run['agent_name'])?></h3>
-                          <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer adipiscing eleifend option congue nihil imperdiet doming…</p>
+                          <!-- <h3 class="bottom10"><?php echo ucfirst($run['agent_name'])?></h3> -->
+                          <h3 class="bottom10"><?php if(isset($run['agent_name'])) { echo ucfirst($run['agent_name']); } else { echo "&nbsp;"; } ?></h3>
+
                         </div>
                         <div class="agetn-contact">
                           <h6>Phone:</h6>
@@ -202,9 +203,13 @@ while($list=mysqli_fetch_assoc($res)) {?>
                           <h6>Adress:</h6>
                         </div>
                         <div class="agetn-contact-2">
-                      <p><?php echo $run['agent_contact']?></p>
+                      <!-- <p><?php echo $run['agent_contact']?></p>
                       <p><?php echo $run['agent_email']?></p>
-                      <p><?php echo ucfirst($run['agent_address'])?></p>
+                      <p><?php echo ucfirst($run['agent_address'])?></p> -->
+                      <p><?php if(isset($run['agent_contact'])) { echo $run['agent_contact']; } else { echo "&nbsp;"; } ?></p>
+<p><?php if(isset($run['agent_email'])) { echo $run['agent_email']; } else { echo "&nbsp;"; } ?></p>
+<p><?php if(isset($run['agent_address'])) { echo ucfirst($run['agent_address']); } else { echo "&nbsp;"; } ?></p>
+
                         </div>
                       </div>
                       <ul class="socials">
