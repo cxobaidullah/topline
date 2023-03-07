@@ -217,22 +217,22 @@ include('header.php');
           <div class="col-md-6 col-sm-6 white_content top20 bottom30">
             <i class="icon-library"></i>
             <h3 class="bottom10 top20">Residential</h3>
-            <p>Duis autem vel eum iriure dolor in hend rerit in vulputate velit esse molestie vel illum dolore nulla facilisis.</p>
+            <p>Our residential services cater to your unique needs. We offer comprehensive property management, leasing, and sales services to ensure your investment is protected and profitable.</p>
           </div>
           <div class="col-md-6 col-sm-6 white_content top20 bottom30">
             <i class="icon-office"></i>
             <h3 class="bottom10 top20">Commercial</h3>
-            <p>Duis autem vel eum iriure dolor in hend rerit in vulputate velit esse molestie vel illum dolore nulla facilisis.</p>
+            <p>Our commercial services provide customized solutions for businesses of all sizes. From property management to leasing, our experts help you make informed decisions and achieve your goals.</p>
           </div>
           <div class="col-md-6 col-sm-6 white_content top20 bottom30">
             <i class=" icon-user-tie"></i>
             <h3 class="bottom10 top20">Our Best Staff</h3>
-            <p>Duis autem vel eum iriure dolor in hend rerit in vulputate velit esse molestie vel illum dolore nulla facilisis.</p>
+            <p>Our team of experienced and dedicated professionals are committed to providing exceptional service and personalized solutions for all your property needs.</p>
           </div>
           <div class="col-md-6 col-sm-6 white_content top20 bottom30">
             <i class="icon-history"></i>
             <h3 class="bottom10 top20">24 Hours Services</h3>
-            <p>Duis autem vel eum iriure dolor in hend rerit in vulputate velit esse molestie vel illum dolore nulla facilisis.</p>
+            <p>We offer round-the-clock services to ensure your property is managed and maintained with the highest level of responsiveness and efficiency.</p>
           </div>
         </div>
       </div>
