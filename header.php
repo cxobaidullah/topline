@@ -105,7 +105,7 @@ require('connection.inc.php');
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">Properties</a>
                 <ul class="dropdown-menu">
                   <li class="">
-                    <a href="property_listing.php" class="dropdown-toggle" data-toggle="dropdown" >All Properties</a>
+                    <a href="property_listing.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='property_listing.php';" >All Properties</a>
                   </li>
                   <?php
                   $sql="SELECT * from property_type where status='1'";
@@ -113,7 +113,7 @@ require('connection.inc.php');
                   while($row=mysqli_fetch_assoc($res)){
                   ?>
                   <li class="">
-                    <a href="property_listing.php?id=<?php echo $row['id']?>" class="dropdown-toggle" data-toggle="dropdown" ><?php echo ucfirst($row['property_type'])?></a>
+                    <a href="property_listing.php?id=<?php echo $row['id']?>" class="dropdown-toggle" data-toggle="dropdown"  onclick="location.href='property_listing.php?id=<?php echo $row['id']?>';" ><?php echo ucfirst($row['property_type'])?></a>
                   </li>
                   <?php }
                   ?>
@@ -121,19 +121,19 @@ require('connection.inc.php');
               </li>
               
               <li class="<?php echo $services_active?>">
-                <a href="services.php" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                <a href="services.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='services.php';">Services</a>
               </li>
               
               <li class="<?php echo $team_active?>">
-                <a href="team.php" class="dropdown-toggle" data-toggle="dropdown" >Team</a>
+                <a href="team.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='team.php';" >Team</a>
               </li>
               
               <li class="<?php echo $about_active?>">
-                <a href="about_us.php" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <a href="about_us.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='about_us.php';">About Us</a>
               </li>
               
               <li class="<?php echo $contact_active?>">
-                <a href="contact.php" class="dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                <a href="contact.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='contact.php';">Contact Us</a>
               </li>
               
             </ul>
