@@ -32,25 +32,103 @@ while($list=mysqli_fetch_assoc($res)) {?>
     </div>
     <div class="row">
       <div class="col-md-8">
-        <div class="row">
+      <div class="row">
           <div class="col-md-12">
             <div id="property-d-1" class="owl-carousel">
-              <div class="item"><img src="admin/media/product/<?php echo $list['property_img'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              if($list['property_img']!=''){
+                ?>
+                <div class="item"><img src="admin/media/product/<?php echo $list['property_img'] ?>" alt="image" class="slider_image" /></div>
+                <?php
+              } 
+              ?>
+              <?php
+              if($list['img2']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img2'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img3']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img3'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img4']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img4'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img5']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img5'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img6']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img6'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img3']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img3'] ?>" alt="image" class="slider_image" /></div>
+              <?php
+              } 
+              ?>
             </div>
             <div id="property-d-1-2" class="owl-carousel">
             <div class="item"><img src="admin/media/product/<?php echo $list['property_img'] ?>" alt="image" class="carosel_image"/></div>
+            <?php
+              if($list['img2']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img2'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img3']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img3'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img4']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img4'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img5']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img5'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img6']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img6'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
+              <?php
+              if($list['img3']!=''){
+                ?>
               <div class="item"><img src="admin/media/product/<?php echo $list['img3'] ?>" alt="image" class="carosel_image"/></div>
+              <?php
+              } 
+              ?>
             </div>
           </div>
         </div>

@@ -269,9 +269,10 @@ if (isset($_POST['submit'])) {
 
 								<div class="col-lg-12">
 
-									<div class="form-group">
-										<label for="properties" class=" form-control-label">Description</label>
-										<textarea name="property_details" id="" class="form-control" required><?php echo $property_details ?></textarea>
+								<div class="form-group">
+										<label for="projects" class=" form-control-label">Description</label>
+										<textarea id="editor" name="property_details"><?php echo $property_details ?></textarea>
+										
 									</div>
 								</div>
 							</div>

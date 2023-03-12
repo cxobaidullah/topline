@@ -123,6 +123,9 @@ require('connection.inc.php');
               <li class="<?php echo $services_active?>">
                 <a href="services.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='services.php';">Services</a>
               </li>
+              <li class="<?php echo $services_active?>">
+                <a href="projectListing.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='services.php';">New Projects</a>
+              </li>
               
               <li class="<?php echo $team_active?>">
                 <a href="team.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='team.php';" >Team</a>

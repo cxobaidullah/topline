@@ -47,16 +47,19 @@ if (isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN'] != '') {
                   <a href="property_type.php">Property Type</a>
                </li>
                <li class="menu-item-has-children dropdown">
-                  <a href="properties.php"> Properties Master</a>
+                  <a href="properties.php"> Properties</a>
                </li>
                <li class="menu-item-has-children dropdown">
-                  <a href="agent.php"> Agent Master</a>
+                  <a href="agent.php"> Agent</a>
                </li>
                <li class="menu-item-has-children dropdown">
-                  <a href="client.php"> Team Master</a>
+                  <a href="client.php"> Team</a>
                </li>
                <li class="menu-item-has-children dropdown">
-                  <a href="#">User Master</a>
+                  <a href="projects.php">Projects</a>
+               </li>
+               <li class="menu-item-has-children dropdown">
+                  <a href="addDocument.php">Add Projects Documents</a>
                </li>
                <li class="menu-item-has-children dropdown">
                   <a href="contact_us.php">Contact us</a>
