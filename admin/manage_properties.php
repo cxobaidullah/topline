@@ -136,30 +136,30 @@ if (isset($_POST['submit'])) {
 	if ($msg == '') {
 		if (isset($_GET['id']) && $_GET['id'] != '') {
 			if ($_FILES['image']['name'] != '') {
-				$image = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];
-				move_uploaded_file($_FILES['image']['tmp_name'], './media/product/' . $image);
+				$property_img = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];
+				move_uploaded_file($_FILES['image']['tmp_name'], './media/product/' . $property_img);
 			}
 			if ($_FILES['image2']['name'] != '') {
-				$image2 = rand(111111111, 999999999) . '_' . $_FILES['image2']['name'];
-				move_uploaded_file($_FILES['image2']['tmp_name'], './media/product/' . $image2);
+				$property_img2 = rand(111111111, 999999999) . '_' . $_FILES['image2']['name'];
+				move_uploaded_file($_FILES['image2']['tmp_name'], './media/product/' . $property_img2);
 			}
 			if ($_FILES['image3']['name'] != '') {
-				$image3 = rand(111111111, 999999999) . '_' . $_FILES['image3']['name'];
-				move_uploaded_file($_FILES['image3']['tmp_name'], './media/product/' . $image3);
+				$property_img3 = rand(111111111, 999999999) . '_' . $_FILES['image3']['name'];
+				move_uploaded_file($_FILES['image3']['tmp_name'], './media/product/' . $property_img3);
 			}
 			if ($_FILES['image4']['name'] != '') {
-				$image4 = rand(111111111, 999999999) . '_' . $_FILES['image4']['name'];
-				move_uploaded_file($_FILES['image4']['tmp_name'], './media/product/' . $image4);
+				$property_img4 = rand(111111111, 999999999) . '_' . $_FILES['image4']['name'];
+				move_uploaded_file($_FILES['image4']['tmp_name'], './media/product/' . $property_img4);
 			}
 			if ($_FILES['image5']['name'] != '') {
-				$image5 = rand(111111111, 999999999) . '_' . $_FILES['image5']['name'];
-				move_uploaded_file($_FILES['image5']['tmp_name'], './media/product/' . $image5);
+				$property_img5 = rand(111111111, 999999999) . '_' . $_FILES['image5']['name'];
+				move_uploaded_file($_FILES['image5']['tmp_name'], './media/product/' . $property_img5);
 				}
 			if ($_FILES['image6']['name'] != '') {
-				$image5 = rand(111111111, 999999999) . '_' . $_FILES['image6']['name'];
-				move_uploaded_file($_FILES['image6']['tmp_name'], './media/product/' . $image6);
+				$property_img5 = rand(111111111, 999999999) . '_' . $_FILES['image6']['name'];
+				move_uploaded_file($_FILES['image6']['tmp_name'], './media/product/' . $property_img6);
 			}
-			$update_sql ="UPDATE `properties` SET `property_title`='$property_title',`property_details`='$property_details',`price`='$price',`sqaure_feet`='$sqaure_feet',`city`='$city',`property_address`='$property_address',`property_img`='$property_img',`img2`='$image2',`img3`='$image3',`img4`='$image4',`bed_room`='$bed_room',`tv_lanch`='$tv_lanch',`parking`='$parking',`kitchen`='$kitchen',`utility`='$utility',`property_type`='$property_type',`floor_space`='$floor_space',`agent_id`='$agent_id',`property_status`='$property_status',`bath`='$bath',`security`='$security',`nearby_resturant`='$nearby_resturant',`cctv`='$cctv',`water_supply`='$water_supply',`img5`='$img5',`img6`='$img6',`sewerage`='$sewerage',`internet`='$internet',`nearby_school`='$nearby_school',`nearby_hospital`='$nearby_hospital',`nearby_mall`='$nearby_mall',`nearby_transpoart`='$nearby_transpoart',`security_staff`='$security_staff' WHERE property_id='$id'";
+			$update_sql ="UPDATE `properties` SET `property_title`='$property_title',`property_details`='$property_details',`price`='$price',`sqaure_feet`='$sqaure_feet',`city`='$city',`property_address`='$property_address',`property_img`='$property_img',`img2`='$property_img2',`img3`='$property_img3',`img4`='$property_img4',`bed_room`='$bed_room',`tv_lanch`='$tv_lanch',`parking`='$parking',`kitchen`='$kitchen',`utility`='$utility',`property_type`='$property_type',`floor_space`='$floor_space',`agent_id`='$agent_id',`property_status`='$property_status',`bath`='$bath',`security`='$security',`nearby_resturant`='$nearby_resturant',`cctv`='$cctv',`water_supply`='$water_supply',`img5`='$property_img5',`img6`='$property_img6',`sewerage`='$sewerage',`internet`='$internet',`nearby_school`='$nearby_school',`nearby_hospital`='$nearby_hospital',`nearby_mall`='$nearby_mall',`nearby_transpoart`='$nearby_transpoart',`security_staff`='$security_staff' WHERE property_id='$id'";
 			mysqli_query($con, $update_sql);
 		} else {
 			$image = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];

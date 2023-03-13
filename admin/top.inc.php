@@ -59,7 +59,7 @@ if (isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN'] != '') {
                   <a href="projects.php">Projects</a>
                </li>
                <li class="menu-item-has-children dropdown">
-                  <a href="addDocument.php">Add Projects Documents</a>
+                  <a href="documents.php">Add Projects Documents</a>
                </li>
                <li class="menu-item-has-children dropdown">
                   <a href="contact_us.php">Contact us</a>

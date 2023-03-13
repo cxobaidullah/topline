@@ -256,7 +256,7 @@ include('header.php');
     </div>
     <div class="row">        
     <?php
-      $sql="SELECT * FROM properties WHERE `status`='1' ORDER BY `property_id` DESC LIMIT 6";
+      $sql="SELECT * FROM properties WHERE `status`='1' ORDER BY `property_id` DESC LIMIT 3";
       $res=mysqli_query($con,$sql);
       while($list=mysqli_fetch_assoc($res)) {
     ?>
@@ -334,11 +334,11 @@ include('header.php');
                     <div class="clearfix"></div>
                   </div>
                   <div class="client-loc">
-                    <p><span>Client:</span> Bryan Doe Joe</p>
-                    <p><span>Location:</span> Mountain Line CA 62548</p>
-                    <p><span>Value:</span> $15,000</p>
+                    <p><span>Client:</span> Hafeez ullha</p>
+                    <p><span>Location:</span>Ghori Town Phase 5</p>
+                    <!-- <p><span>Value:</span> $15,000</p> -->
                   </div>
-                  <a href="#" class="link_arrow">read more</a> 
+                  <!-- <a href="#" class="link_arrow">read more</a>  -->
                 </div>
               </div>
             </div>
@@ -362,11 +362,11 @@ include('header.php');
                     <div class="clearfix"></div>
                   </div>
                   <div class="client-loc">
-                    <p><span>Client:</span> Bryan Doe Joe</p>
-                    <p><span>Location:</span> Mountain Line CA 62548</p>
-                    <p><span>Value:</span> $15,000</p>
+                  <p><span>Client:</span> Hafeez ullha</p>
+                    <p><span>Location:</span>Ghori Town Phase 5</p>
+                    <!-- <p><span>Value:</span> $15,000</p> -->
                   </div>
-                  <a href="#" class="link_arrow">read more</a> 
+                  <!-- <a href="#" class="link_arrow">read more</a>  -->
                 </div>
               </div>
             </div>
@@ -390,11 +390,11 @@ include('header.php');
                     <div class="clearfix"></div>
                   </div>
                   <div class="client-loc">
-                    <p><span>Client:</span> Bryan Doe Joe</p>
-                    <p><span>Location:</span> Mountain Line CA 62548</p>
-                    <p><span>Value:</span> $15,000</p>
+                  <p><span>Client:</span> Hafeez ullha</p>
+                    <p><span>Location:</span>Ghori Town Phase 5</p>
+                    <!-- <p><span>Value:</span> $15,000</p> -->
                   </div>
-                  <a href="#" class="link_arrow">read more</a> 
+                  <!-- <a href="#" class="link_arrow">read more</a>  -->
                 </div>
               </div>
             </div>
@@ -418,11 +418,11 @@ include('header.php');
                     <div class="clearfix"></div>
                   </div>
                   <div class="client-loc">
-                    <p><span>Client:</span> Bryan Doe Joe</p>
-                    <p><span>Location:</span> Mountain Line CA 62548</p>
-                    <p><span>Value:</span> $15,000</p>
+                  <p><span>Client:</span> Hafeez ullha</p>
+                    <p><span>Location:</span>Ghori Town Phase 5</p>
+                    <!-- <p><span>Value:</span> $15,000</p> -->
                   </div>
-                  <a href="#" class="link_arrow">read more</a> 
+                  <!-- <a href="#" class="link_arrow">read more</a>  -->
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ $res=mysqli_query($con,$sql);
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Documents</h4>
-                           <div><a href="manage_agent.php" class="btn btn-primary  btn-right">Add Document</a></div>
+                           <div><a href="addDocument.php" class="btn btn-primary  btn-right">Add Document</a></div>
                         </div>
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">
@@ -68,7 +68,7 @@ $res=mysqli_query($con,$sql);
                                           <!-- <img src="media/agent/<?php echo $row['pdf']?>" height="100px" width="100px" alt=""> -->
                                           <div style="margin-top:10px">
     <a href="media/agent/<?php echo $row['pdf'];?>">
-      <img src="https://images.zameen.com/w248_h290/7/2320/zam_zam_citi_44175.jpeg" alt="" style="height:100px; width:100px;">
+      <img src="media/agent/<?php echo $row['thumbnil'];?>" alt="" style="height:50px; width:150px;">
     </a>
     </div>
                                        <?php }else{

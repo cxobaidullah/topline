@@ -221,12 +221,12 @@ while($list=mysqli_fetch_assoc($res)) {?>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                       <ul class="pro-list">
-                      <?php if($list['water_supply']!=''){?>
+                      <?php if($list['water_supply']!=0){?>
                         <li>
                         Water Supply
                         </li>
                         <?php }?>
-                        <?php if($list['parking']!=''){?>
+                        <?php if($list['parking']!=0){?>
                         <li>
                         Parking
                         </li>
@@ -235,7 +235,7 @@ while($list=mysqli_fetch_assoc($res)) {?>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                       <ul class="pro-list">
-                      <?php if($list['sewerage']!=''){?>
+                      <?php if($list['sewerage']!=0){?>
                         <li>
                         Sewerage
                         </li>
@@ -244,9 +244,67 @@ while($list=mysqli_fetch_assoc($res)) {?>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                       <ul class="pro-list">
-                      <?php if($list['tv_lanch']!=''){?>
+                      <?php if($list['internet']!=0){?>
                         <li>
-                        TV Lanch
+                        Internet
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['nearby_resturant']!=0){?>
+                        <li>
+                        Nearby Resturant
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['nearby_school']!=0){?>
+                        <li>
+                        Nearby School
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['nearby_hospital']!=0){?>
+                        <li>
+                        Nearby Hospital
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['nearby_mall']!=0){?>
+                        <li>
+                        Nearby Shopping Mall
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['nearby_transpoart']!=0){?>
+                        <li>
+                        Nearby Public Transpoart
+                        </li>
+                        <?php }?>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="pro-list">
+                      <?php if($list['security_staff']!=0){?>
+                        <li>
+                        Security 
                         </li>
                         <?php }?>
                       </ul>

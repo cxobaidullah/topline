@@ -408,7 +408,7 @@ while($list=mysqli_fetch_assoc($res)) {?>
           <div class="col-md-12">
             <div id="agent-2-slider" class="owl-carousel">
             <?php
-              $feature="SELECT property_img,property_id FROM projects where property_status='Rent' ORDER BY property_id DESC limit 3";
+              $feature="SELECT property_img,property_id FROM projects where property_status='Sale' ORDER BY property_id DESC limit 3";
               $getfeature=mysqli_query($con,$feature);
               while($fetures=mysqli_fetch_assoc($getfeature)){
             ?>
@@ -416,7 +416,7 @@ while($list=mysqli_fetch_assoc($res)) {?>
                 <div class="property_item heading_space">
                   <div class="image">
                     <a href="project_details.php?id=<?php echo $fetures['property_id'] ?>"><img src="admin/media/product/<?php echo $fetures['property_img'] ?>" alt="listin" class="img-responsive"></a>
-                    <div class="feature"><span class="tag-2">For Rent</span></div>
+                    <div class="feature"><span class="tag-2">For Sale</span></div>
                   </div>
                 </div>
               </div>
@@ -429,7 +429,7 @@ while($list=mysqli_fetch_assoc($res)) {?>
     
     <div style="margin-top:10px">
     <a href="admin/media/agent/<?php echo $file['pdf'];?>">
-      <img src="https://images.zameen.com/w248_h290/7/2320/zam_zam_citi_44175.jpeg" alt="" style="height:200px; width:200px;">
+      <img src="admin/media/agent/<?php echo $file['thumbnil'];?>" alt="" style="height:200px; width:200px;">
     </a>
     <h4><?php echo $file['title'];?></h4>
     </div>

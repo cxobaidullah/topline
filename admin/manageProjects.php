@@ -130,30 +130,30 @@ if (isset($_POST['submit'])) {
 	if ($msg == '') {
 		if (isset($_GET['id']) && $_GET['id'] != '') {
 			if ($_FILES['image']['name'] != '') {
-				$image = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];
-				move_uploaded_file($_FILES['image']['tmp_name'], './media/product/' . $image);
+				$property_img = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];
+				move_uploaded_file($_FILES['image']['tmp_name'], './media/product/' . $property_img);
 			}
 			if ($_FILES['image2']['name'] != '') {
-				$image2 = rand(111111111, 999999999) . '_' . $_FILES['image2']['name'];
-				move_uploaded_file($_FILES['image2']['tmp_name'], './media/product/' . $image2);
+				$property_img2 = rand(111111111, 999999999) . '_' . $_FILES['image2']['name'];
+				move_uploaded_file($_FILES['image2']['tmp_name'], './media/product/' . $property_img2);
 			}
 			if ($_FILES['image3']['name'] != '') {
-				$image3 = rand(111111111, 999999999) . '_' . $_FILES['image3']['name'];
-				move_uploaded_file($_FILES['image3']['tmp_name'], './media/product/' . $image3);
+				$property_img3 = rand(111111111, 999999999) . '_' . $_FILES['image3']['name'];
+				move_uploaded_file($_FILES['image3']['tmp_name'], './media/product/' . $property_img3);
 			}
 			if ($_FILES['image4']['name'] != '') {
-				$image4 = rand(111111111, 999999999) . '_' . $_FILES['image4']['name'];
-				move_uploaded_file($_FILES['image4']['tmp_name'], './media/product/' . $image4);
+				$property_img4 = rand(111111111, 999999999) . '_' . $_FILES['image4']['name'];
+				move_uploaded_file($_FILES['image4']['tmp_name'], './media/product/' . $property_img4);
 			}
 			if ($_FILES['image5']['name'] != '') {
-				$image5 = rand(111111111, 999999999) . '_' . $_FILES['image5']['name'];
-				move_uploaded_file($_FILES['image5']['tmp_name'], './media/product/' . $image5);
+				$property_img5 = rand(111111111, 999999999) . '_' . $_FILES['image5']['name'];
+				move_uploaded_file($_FILES['image5']['tmp_name'], './media/product/' . $property_img5);
 				}
 			if ($_FILES['image6']['name'] != '') {
-				$image5 = rand(111111111, 999999999) . '_' . $_FILES['image6']['name'];
-				move_uploaded_file($_FILES['image6']['tmp_name'], './media/product/' . $image6);
+				$property_img6 = rand(111111111, 999999999) . '_' . $_FILES['image6']['name'];
+				move_uploaded_file($_FILES['image6']['tmp_name'], './media/product/' . $property_img6);
 			}
-			$update_sql ="UPDATE `projects` SET `property_title`='$property_title',`property_details`='$property_details',`price`='$price',`sqaure_feet`='$sqaure_feet',`city`='$city',`property_address`='$property_address',`property_img`='$property_img',`img2`='$image2',`img3`='$image3',`img4`='$image4',`parking`='$parking',`utility`='$utility',`agent_id`='$agent_id',`property_status`='$property_status',`nearby_resturant`='$nearby_resturant',`cctv`='$cctv',`water_supply`='$water_supply',`img5`='$img5',`img6`='$img6',`sewerage`='$sewerage',`internet`='$internet',`nearby_school`='$nearby_school',`nearby_hospital`='$nearby_hospital',`nearby_mall`='$nearby_mall',`nearby_transpoart`='$nearby_transpoart',`security_staff`='$security_staff' WHERE property_id='$id'";
+			$update_sql ="UPDATE `projects` SET `property_title`='$property_title',`property_details`='$property_details',`price`='$price',`sqaure_feet`='$sqaure_feet',`city`='$city',`property_address`='$property_address',`property_img`='$property_img',`img2`='$property_img2',`img3`='$property_img3',`img4`='$property_img4',`parking`='$parking',`utility`='$utility',`agent_id`='$agent_id',`property_status`='$property_status',`nearby_resturant`='$nearby_resturant',`cctv`='$cctv',`water_supply`='$water_supply',`img5`='$property_img5',`img6`='$property_img6',`sewerage`='$sewerage',`internet`='$internet',`nearby_school`='$nearby_school',`nearby_hospital`='$nearby_hospital',`nearby_mall`='$nearby_mall',`nearby_transpoart`='$nearby_transpoart',`security_staff`='$security_staff' WHERE property_id='$id'";
 			mysqli_query($con, $update_sql);
 		} else {
 			$image = rand(111111111, 999999999) . '_' . $_FILES['image']['name'];
@@ -199,24 +199,13 @@ if (isset($_POST['submit'])) {
 									</div>
 								</div>
 
-								<div class="col-lg-4">
+								<!-- <div class="col-lg-4">
 									<div class="form-group">
 										<label for="Agent" class=" form-control-label">Property Type</label>
-										<!-- <select class="form-control" name="property_type" required>
-											<option>Select Type</option>
-											<?php
-											$res = mysqli_query($con, "select * from property_type order by id desc");
-											while ($row = mysqli_fetch_assoc($res)) {
-												if ($row['id'] == $property_type) {
-													echo "<option selected value=" . $row['id'] . ">" . $row['property_type'] . "</option>";
-												} else {
-													echo "<option value=" . $row['id'] . ">" . $row['property_type'] . "</option>";
-												}
-											}
-											?>
-										</select> -->
+										
 									</div>
-								</div>
+								</div> -->
+
 								<div class="col-lg-4">
 									<div class="form-group">
 										<label for="Agent" class=" form-control-label">Agent</label>
@@ -375,13 +364,14 @@ if (isset($_POST['submit'])) {
 								</ol>
 							</nav>
 							<div class="row">
-								<div class="col-lg-4">
+								<!-- <div class="col-lg-4">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Bed Room</label>
 										<input type="number" name="bed_room" placeholder="Enter bed_room" class="form-control" value="<?php echo $bed_room ?>">
 
 									</div>
 								</div>
+
 								<div class="col-lg-4">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">TV Lanch</label>
@@ -389,12 +379,15 @@ if (isset($_POST['submit'])) {
 
 									</div>
 								</div>
+
 								<div class="col-lg-4">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Bath</label>
 										<input type="number" name="bath" placeholder="Enter Bath" class="form-control" value="<?php echo $bath ?>">
 									</div>
-								</div>
+								</div> -->
+
+								<!-- sc -->
 								<div class="col-lg-4">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Water Supply</label>
@@ -417,29 +410,35 @@ if (isset($_POST['submit'])) {
 								</div>
 								<div class="col-lg-3">
 									<div class="form-group">
-										<label for="projects" class=" form-control-label">Parking</label>
-										<textarea name="parking" placeholder="Enter Parking" class="form-control"><?php echo $parking ?></textarea>
+									<label for="projects" class=" form-control-label">Parking</label>
+										<select name="parking" id="" class="form-control">
+											<option>Select</option>
+											<option value="1" <?php if($parking==1){ echo "selected";}?>>Yes</option>
+											<option value="0" <?php if($parking==0){ echo "selected";}?>>No</option>
+										</select>
 									</div>
 								</div>
-								<div class="col-lg-3">
+								<!-- <div class="col-lg-3">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Kitchen</label>
 										<textarea name="kitchen" placeholder="Enter kitchen" class="form-control"><?php echo $kitchen ?></textarea>
 									</div>
-								</div>
+								</div> -->
+
 								<div class="col-lg-3">
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Utility</label>
 										<textarea name="utility" placeholder="Enter Utility" class="form-control"><?php echo $utility ?></textarea>
 									</div>
 								</div>
-								<div class="col-lg-3">
+
+								<!-- <div class="col-lg-3">
 
 									<div class="form-group">
 										<label for="projects" class=" form-control-label">Floor Space</label>
 										<textarea name="floor_space" placeholder="Enter Floor Space" class="form-control"><?php echo $floor_space ?></textarea>
 									</div>
-								</div>
+								</div> -->
 
 
 							</div>
