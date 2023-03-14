@@ -31,7 +31,7 @@ require('connection.inc.php');
   <div id="header-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-md-2 hidden-xs hidden-sm"><a href="index.php"><img src="images/transparent.png" alt="logo"/></a></div>
+        <div class="col-md-2 hidden-xs hidden-sm "><a href="index.php"><img src="images/transparent.png" alt="logo"/></a></div>
         <div class="col-md-10 col-sm-12 col-xs-12">
           <div class="get-tuch text-left top20">
             <i class="icon-telephone114"></i>
@@ -98,7 +98,7 @@ require('connection.inc.php');
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
               <li class="<?php echo $home_active?>">
-                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                <a href="index.php" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href='index.php';">Home</a>
               </li>
               
               <li class="dropdown <?php echo $property_active?>">
